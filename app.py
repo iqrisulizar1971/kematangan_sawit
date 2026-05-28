@@ -290,7 +290,7 @@ with st.sidebar:
 # ═══════════════════════════════════════════════════════
 st.markdown("""
 <div class="main-header">
-  <h1>🌴 Otomasi Deteksi Kematangan Buah Sawit</h1>
+  <h1>🌴 Sietem Deteksi Kematangan Buah Sawit</h1>
   <p>Iqri Sulizar Hidriansjah · Kontak WA: 0852-1939-0680 . Email: iqrisulizar@gmail.com . LinkedIn: linkedin.com/in/iqrisulizar</p>
 </div>
 """, unsafe_allow_html=True)
@@ -668,7 +668,6 @@ st.markdown("---")
 st.markdown("""
 <div style="text-align:center;padding:.8rem;color:#888;font-size:.82rem">
     🌴 <strong>Sistem Deteksi Kematangan Buah Sawit</strong> · Iqri Sulizar Hidriansjah<br>
-    Social Investment Indonesia (SII) · Digitalization &amp; IT Services Manager<br>
     Bisa diakses dari HP Android via browser Chrome 📱
 </div>
 """, unsafe_allow_html=True)
