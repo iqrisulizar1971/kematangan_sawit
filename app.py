@@ -316,7 +316,7 @@ tab1, tab2, tab3, tab4 = st.tabs([
     "🖼️  Gambar",
     "🎥  Video",
     "📷  Kamera",
-    "ℹ️  Panduan Deploy",
+    "👤  Tentang Kami",
 ])
 
 # ══════════════════════════════════════════════
@@ -555,12 +555,214 @@ with tab3:
             </div>""", unsafe_allow_html=True)
 
 # ══════════════════════════════════════════════
-# TAB 4 — PANDUAN DEPLOY
+# TAB 4 — TENTANG KAMI
 # ══════════════════════════════════════════════
 with tab4:
-    st.markdown("#### Panduan Deploy ke Streamlit Cloud")
 
-# ─────────────────────────────────────────────
+    FOTO_B64 = "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"
+
+    # ── Hero Banner ──
+    st.markdown("""
+    <div style="background:linear-gradient(135deg,#1a5c2a 0%,#2d8a47 60%,#f9a825 100%);
+    border-radius:16px;padding:2rem;margin-bottom:1.5rem;text-align:center;
+    box-shadow:0 4px 20px rgba(0,0,0,.15)">
+        <div style="font-size:4rem">&#127796;</div>
+        <h2 style="color:white;margin:.4rem 0 .2rem;font-size:1.6rem;font-weight:700">
+            Sistem Deteksi Kematangan Buah Sawit</h2>
+        <p style="color:rgba(255,255,255,.9);margin:0;font-size:.95rem">
+            YOLOv8 Object Detection &#183; Social Investment Indonesia (SII)</p>
+    </div>
+    """, unsafe_allow_html=True)
+
+    col_profil, col_detail = st.columns([1, 2], gap="large")
+
+    with col_profil:
+        st.html(f"""
+<div style="background:#fff;border-radius:16px;padding:1.8rem;
+box-shadow:0 2px 16px rgba(0,0,0,.08);text-align:center">
+    <img src="data:image/jpeg;base64,{FOTO_B64}"
+         style="width:160px;height:160px;object-fit:cover;object-position:top center;
+         border-radius:50%;border:4px solid #2d8a47;
+         box-shadow:0 4px 16px rgba(45,138,71,.25);margin-bottom:.8rem;
+         background:#f0f7f0"/>
+    <h3 style="margin:0;color:#1a5c2a;font-size:1.1rem;font-weight:700">
+        Iqri Sulizar Hidriansjah</h3>
+    <p style="margin:.3rem 0 .8rem;color:#666;font-size:.83rem">
+        Konsultan Strategi dan Keberlanjutan<br>Praktisi Teknologi Informasi</p>
+    <div style="background:#e8f5e9;border-radius:8px;padding:.45rem;
+    font-size:.8rem;color:#2e7d32;margin-bottom:.8rem">
+        &#128205; Bogor, Jawa Barat, Indonesia
+    </div>
+    <a href="https://linkedin.com/in/iqrisulizar" target="_blank"
+    style="background:#0077b5;color:white;padding:.4rem 1.2rem;
+    border-radius:8px;text-decoration:none;font-size:.82rem;font-weight:600;
+    display:inline-block">
+        &#128279; LinkedIn
+    </a>
+</div>
+""")
+
+        st.html("<br>")
+
+        st.html("""
+<div style="background:#fff;border-radius:16px;padding:1.4rem;
+box-shadow:0 2px 16px rgba(0,0,0,.08)">
+    <h4 style="color:#1a5c2a;margin:0 0 .8rem;font-size:.95rem">&#127891; Pendidikan</h4>
+    <div style="border-left:3px solid #2d8a47;padding-left:.8rem;margin-bottom:.8rem">
+        <p style="margin:0;font-weight:700;font-size:.88rem;color:#333">
+            Magister Teknik Informatika (S2)</p>
+        <p style="margin:.1rem 0;font-size:.82rem;color:#2d8a47;font-weight:600">
+            Universitas Pamulang</p>
+        <p style="margin:0;font-size:.8rem;color:#888">Jan 2024 &#8211; 2026 (Perkiraan)</p>
+    </div>
+    <div style="background:#f3f6ff;border-radius:8px;padding:.7rem;font-size:.8rem;color:#3f51b5">
+        &#128221; <strong>Tesis:</strong> Kerangka Analitik Multimodel untuk Otomatisasi
+        Analisis Materialitas Ganda pada Laporan Keberlanjutan menggunakan
+        BERT, Bi-LSTM dan TextGCN
+    </div>
+</div>
+""")
+
+        st.html("<br>")
+
+        st.html("""
+<div style="background:#fff;border-radius:16px;padding:1.4rem;
+box-shadow:0 2px 16px rgba(0,0,0,.08)">
+    <h4 style="color:#1a5c2a;margin:0 0 .8rem;font-size:.95rem">&#128270; Minat Riset</h4>
+    <ul style="margin:0;padding-left:1.1rem;font-size:.82rem;color:#555;line-height:1.8">
+        <li>Pengembangan Aplikasi untuk Investasi Sosial</li>
+        <li>Otomasi alur kerja dan arsitektur dokumen digital untuk efisiensi korporat</li>
+    </ul>
+</div>
+""")
+
+    with col_detail:
+        # Ringkasan profil
+        st.html("""
+<div style="background:#fff;border-radius:16px;padding:1.5rem;
+box-shadow:0 2px 16px rgba(0,0,0,.08);margin-bottom:1rem">
+    <h4 style="color:#1a5c2a;margin:0 0 .8rem">&#128203; Ringkasan Profil</h4>
+    <p style="color:#444;font-size:.9rem;line-height:1.75;margin:0">
+    Profesional yang menggabungkan keahlian mendalam di bidang
+    <strong>keberlanjutan perusahaan (Sustainability)</strong> dan
+    <strong>teknologi informasi modern</strong>. Berpengalaman sebagai konsultan
+    strategi PROPER dan pengukur dampak sosial (SROI), serta aktif mengintegrasikan
+    kerangka analitik berbasis <strong>Kecerdasan Buatan</strong>
+    (NLP dan Deep Learning) dalam pelaporan keberlanjutan (ESG).
+    Memiliki rekam jejak yang kuat dalam arsitektur digital, otomatisasi proses
+    (Microsoft 365), dan pengelolaan ekosistem akademik.
+    </p>
+</div>
+""")
+
+        # Pengalaman
+        st.html("""
+<div style="background:#fff;border-radius:16px;padding:1.5rem;
+box-shadow:0 2px 16px rgba(0,0,0,.08);margin-bottom:1rem">
+    <h4 style="color:#1a5c2a;margin:0 0 1rem">&#128188; Pengalaman Profesional</h4>
+
+    <div style="border-left:4px solid #2d8a47;padding-left:1rem;margin-bottom:1rem">
+        <p style="margin:0;font-weight:700;color:#333;font-size:.9rem">
+            Konsultan Investasi Sosial</p>
+        <p style="margin:.1rem 0 .2rem;font-size:.82rem;color:#2d8a47;font-weight:600">
+            Social Investment Indonesia (SII)</p>
+        <p style="margin:0 0 .5rem;font-size:.8rem;color:#888">2021 &#8211; Sekarang</p>
+        <ul style="margin:0;padding-left:1.2rem;font-size:.85rem;color:#555;line-height:1.75">
+            <li>Mengembangkan dan mengimplementasikan aplikasi untuk Investasi Sosial (SLO, SLA, IKM, SROI, dll)</li>
+            <li>Mengelola pengembangan SROI App (sroi.socialinvestment.id)</li>
+            <li>Mengimplementasikan model Kecerdasan Buatan (AI) untuk Layanan Publik dan Bisnis</li>
+        </ul>
+    </div>
+
+    <div style="border-left:4px solid #f9a825;padding-left:1rem;margin-bottom:1rem">
+        <p style="margin:0;font-weight:700;color:#333;font-size:.9rem">
+            Manajer Inisiatif TI dan Operasional</p>
+        <p style="margin:.1rem 0 .2rem;font-size:.82rem;color:#f9a825;font-weight:600">
+            Arasis Awan Teknologi</p>
+        <p style="margin:0 0 .5rem;font-size:.8rem;color:#888">2022 &#8211; Sekarang</p>
+        <ul style="margin:0;padding-left:1.2rem;font-size:.85rem;color:#555;line-height:1.75">
+            <li>Memimpin inisiatif teknologi dan mengelola platform digital arasis.id</li>
+        </ul>
+    </div>
+
+    <div style="border-left:4px solid #1565c0;padding-left:1rem">
+        <p style="margin:0;font-weight:700;color:#333;font-size:.9rem">
+            Administrator Sistem Jurnal</p>
+        <p style="margin:.1rem 0 .2rem;font-size:.82rem;color:#1565c0;font-weight:600">
+            Jurnal Canting</p>
+        <p style="margin:0 0 .5rem;font-size:.8rem;color:#888">2023 &#8211; Sekarang</p>
+        <ul style="margin:0;padding-left:1.2rem;font-size:.85rem;color:#555;line-height:1.75">
+            <li>Mengelola platform jurnal ilmiah (canting.socialinvestment.id)</li>
+            <li>Menyelesaikan permasalahan teknis dalam pengelolaan jurnal canting</li>
+        </ul>
+    </div>
+</div>
+""")
+
+        # Keahlian
+        st.html("""
+<div style="background:#fff;border-radius:16px;padding:1.5rem;
+box-shadow:0 2px 16px rgba(0,0,0,.08)">
+    <h4 style="color:#1a5c2a;margin:0 0 1rem">&#9889; Keahlian dan Teknologi</h4>
+    <div style="display:flex;gap:1rem;flex-wrap:wrap">
+        <div style="flex:1;min-width:180px;background:#e8f5e9;border-radius:10px;padding:1rem">
+            <p style="margin:0 0 .6rem;font-weight:700;color:#1a5c2a;font-size:.88rem">
+                &#127807; Keberlanjutan dan Strategi</p>
+            <ul style="margin:0;padding-left:1.1rem;font-size:.83rem;color:#444;line-height:1.8">
+                <li>Social Return on Investment (SROI)</li>
+                <li>PROPER (Kementerian LHK)</li>
+                <li>Pelaporan ESG dan GRI 400 Series</li>
+                <li>Kepatuhan POJK 51/2017</li>
+                <li>Analisis Materialitas Ganda</li>
+            </ul>
+        </div>
+        <div style="flex:1;min-width:180px;background:#e3f2fd;border-radius:10px;padding:1rem">
+            <p style="margin:0 0 .6rem;font-weight:700;color:#1565c0;font-size:.88rem">
+                &#129302; Teknologi dan AI</p>
+            <ul style="margin:0;padding-left:1.1rem;font-size:.83rem;color:#444;line-height:1.8">
+                <li>NLP dan Deep Learning: BERT, Bi-LSTM, TextGCN</li>
+                <li>Computer Vision: Klasifikasi dan Deteksi</li>
+                <li>Microsoft 365: SharePoint, Power Automate, Power Apps</li>
+                <li>Riset Data: NVivo, OJS</li>
+                <li>Flutter &#183; Streamlit &#183; Python</li>
+            </ul>
+        </div>
+    </div>
+</div>
+""")
+
+    # ── Tentang Aplikasi ──
+    st.markdown("---")
+    st.markdown("""
+    <div style="background:#fff;border-radius:16px;padding:1.5rem;
+    box-shadow:0 2px 16px rgba(0,0,0,.08)">
+        <h4 style="color:#1a5c2a;margin:0 0 1rem">&#127796; Tentang Aplikasi Ini</h4>
+        <div style="display:flex;gap:1rem;flex-wrap:wrap">
+            <div style="flex:1;min-width:200px;background:#f9fbe7;border-radius:10px;
+            padding:1rem;border-left:4px solid #827717">
+                <p style="margin:0 0 .3rem;font-weight:700;font-size:.88rem;color:#827717">&#127919; Tujuan</p>
+                <p style="margin:0;font-size:.83rem;color:#555;line-height:1.6">
+                Mengotomatisasi penilaian kematangan tandan buah segar (TBS) sawit
+                menggunakan model YOLOv8 untuk mendukung efisiensi panen di sektor perkebunan.</p>
+            </div>
+            <div style="flex:1;min-width:200px;background:#fce4ec;border-radius:10px;
+            padding:1rem;border-left:4px solid #c62828">
+                <p style="margin:0 0 .3rem;font-weight:700;font-size:.88rem;color:#c62828">&#128300; Model</p>
+                <p style="margin:0;font-size:.83rem;color:#555;line-height:1.6">
+                YOLOv8 Medium (YOLOv8m) dilatih dengan dataset gabungan Kaggle dan Roboflow,
+                mampu mendeteksi 3 kelas: Mentah, Matang, dan Lewat Matang.</p>
+            </div>
+            <div style="flex:1;min-width:200px;background:#e8eaf6;border-radius:10px;
+            padding:1rem;border-left:4px solid #3f51b5">
+                <p style="margin:0 0 .3rem;font-weight:700;font-size:.88rem;color:#3f51b5">&#128241; Akses</p>
+                <p style="margin:0;font-size:.83rem;color:#555;line-height:1.6">
+                Dapat diakses dari HP Android via browser Chrome tanpa instalasi apapun.
+                Deploy di Streamlit Cloud dengan model tersimpan di Google Drive.</p>
+            </div>
+        </div>
+    </div>
+    """, unsafe_allow_html=True)
+
 # FOOTER
 # ─────────────────────────────────────────────
 st.markdown("---")
