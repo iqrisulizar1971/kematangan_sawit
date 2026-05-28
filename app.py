@@ -560,7 +560,7 @@ with tab3:
 with tab4:
     st.markdown("#### Panduan Deploy ke Streamlit Cloud")
 
-    ⚠️ <strong>Catatan performa di Streamlit Cloud (gratis):</strong><br>
+    <strong>Catatan performa di Streamlit Cloud (gratis):</strong><br>
     • RAM: ~1 GB<br>
     • CPU only — inferensi ~1–3 detik/gambar (wajar)<br>
     • Sleep otomatis jika tidak aktif 7 hari (wake up saat dibuka kembali)<br>
