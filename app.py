@@ -116,12 +116,12 @@ section[data-testid="stSidebar"] textarea { color:#111!important; background:#ff
 # FUNGSI: DOWNLOAD MODEL DARI GOOGLE DRIVE
 # ─────────────────────────────────────────────
 def download_model_gdrive(file_id: str, dest: str) -> bool:
-    """Download model dari Google Drive pakai gdown."""
+    """Download model dari Google Drive/OneDrive pakai gdown."""
     try:
         import gdown
         os.makedirs(os.path.dirname(dest), exist_ok=True)
         url = f"https://drive.google.com/uc?id={file_id}"
-        with st.spinner("⏳ Mengunduh model dari Google Drive... (sekali saja)"):
+        with st.spinner("⏳ Mengunduh model dari Google Drive/OneDrive ... (sekali saja)"):
             gdown.download(url, dest, quiet=False)
         return Path(dest).exists() and Path(dest).stat().st_size > 1_000_000
     except Exception as e:
@@ -222,21 +222,21 @@ with st.sidebar:
     st.markdown("### 📂 Model")
     sumber_model = st.radio(
         "Sumber model:",
-        ["Google Drive (otomatis)", "Upload manual (.pt)"],
+        ["Google Drive/OneDrive (otomatis)", "Upload manual (.pt)"],
         index=0
     )
 
     model = None
 
-    if sumber_model == "Google Drive (otomatis)":
+    if sumber_model == "Google Drive/OneDrive (otomatis)":
         gdrive_id = st.text_input(
-            "Google Drive File ID",
+            "",
             value=GDRIVE_FILE_ID,
             help="ID dari link share Google Drive file best.pt"
         )
         if st.button("⬇️ Download & Muat Model"):
             if gdrive_id == "GANTI_DENGAN_FILE_ID_ANDA" or len(gdrive_id) < 10:
-                st.error("Masukkan File ID Google Drive yang valid.")
+                st.error("Masukkan File ID Google Drive/OneDrive yang valid.")
             elif Path(MODEL_LOCAL_PATH).exists():
                 st.success("✅ Model sudah ada, langsung dimuat.")
                 model = load_model(MODEL_LOCAL_PATH)
@@ -291,7 +291,7 @@ with st.sidebar:
 st.markdown("""
 <div class="main-header">
   <h1>🌴 Sistem Deteksi Kematangan Buah Sawit</h1>
-  <p>Iqri Sulizar Hidriansjah · Kontak WA: 0852-1939-0680 . Email: iqrisulizar@gmail.com . LinkedIn: linkedin.com/in/iqrisulizar</p>
+  <p>Iqri Sulizar Hidriansjah · Kontak WA: 0852-1939-0680 . Email: iqrisulizar@socialinvestment.id . LinkedIn: linkedin.com/in/iqrisulizar</p>
 </div>
 """, unsafe_allow_html=True)
 
@@ -746,7 +746,7 @@ box-shadow:0 2px 16px rgba(0,0,0,.08)">
                 <p style="margin:0 0 .3rem;font-weight:700;font-size:.88rem;color:#3f51b5">&#128241; Akses</p>
                 <p style="margin:0;font-size:.83rem;color:#555;line-height:1.6">
                 Dapat diakses dari HP Android via browser Chrome tanpa instalasi apapun.
-                Deploy di Streamlit Cloud dengan model tersimpan di Google Drive.</p>
+                Deploy di Streamlit Cloud dengan model tersimpan di Google Drive/OneDrive.</p>
             </div>
         </div>
     </div>
