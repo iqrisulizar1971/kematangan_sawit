@@ -667,8 +667,8 @@ font = "sans serif"
 st.markdown("---")
 st.markdown("""
 <div style="text-align:center;padding:.8rem;color:#888;font-size:.82rem">
-    🌴 <strong>Sistem Deteksi Kematangan Buah Sawit</strong> · YOLOv8 Object Detection<br>
-    Social Investment Indonesia (SII) · Digitalization &amp; IT Services<br>
+    🌴 <strong>Sistem Deteksi Kematangan Buah Sawit</strong> · Iqri Sulizar Hidriansjah<br>
+    Social Investment Indonesia (SII) · Digitalization &amp; IT Services Manager<br>
     Bisa diakses dari HP Android via browser Chrome 📱
 </div>
 """, unsafe_allow_html=True)
