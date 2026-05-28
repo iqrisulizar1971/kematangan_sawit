@@ -291,7 +291,7 @@ with st.sidebar:
 st.markdown("""
 <div class="main-header">
   <h1>🌴 Otomasi Deteksi Kematangan Buah Sawit</h1>
-  <p>Iqri Sulizar Hidriansjah · Kontak WA: 0852-1939-0680 . Email:iqrisulizar@gmail.com</p>
+  <p>Iqri Sulizar Hidriansjah · Kontak WA: 0852-1939-0680 . Email: iqrisulizar@gmail.com . LinkedIn: linkedin.com/in/iqrisulizar</p>
 </div>
 """, unsafe_allow_html=True)
 
